@@ -122,7 +122,7 @@ func (c *completedConfig) NewBootstrapController(legacyRESTStorage corerest.Lega
 
 		PublicIP: c.GenericConfig.PublicAddress,
 
-		ServiceIP:                 c.ExtraConfig.APIServerServiceIP,
+		// ServiceIP:                 c.ExtraConfig.APIServerServiceIP,
 		ServicePort:               c.ExtraConfig.APIServerServicePort,
 		ExtraServicePorts:         c.ExtraConfig.ExtraServicePorts,
 		ExtraEndpointPorts:        c.ExtraConfig.ExtraEndpointPorts,

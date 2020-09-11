@@ -666,6 +666,7 @@ func allocateHealthCheckNodePort(service *api.Service, nodePortOp *portallocator
 
 // The return bool value indicates if a cluster IP is allocated successfully.
 func initClusterIP(service *api.Service, allocator ipallocator.Interface) (bool, error) {
+	/*
 	switch {
 	case service.Spec.ClusterIP == "":
 		// Allocate next available.
@@ -688,6 +689,8 @@ func initClusterIP(service *api.Service, allocator ipallocator.Interface) (bool,
 		return true, nil
 	}
 
+
+	 */
 	return false, nil
 }
 
